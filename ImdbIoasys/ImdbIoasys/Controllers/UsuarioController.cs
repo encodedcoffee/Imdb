@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ImdbIoasys.Data;
 using ImdbIoasys.Models;
+using ImdbIoasys.Utils;
 
 namespace ImdbIoasys.Controllers
 {
@@ -76,6 +77,7 @@ namespace ImdbIoasys.Controllers
         [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
+            usuario.Senha = usuario.Senha.Criptografar();
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
