@@ -15,16 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{4548A592-51EF-4AA4-AD8C-12C54A8815CD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - GlobalUtils", "4 - GlobalUtils", "{D8AEC356-88AB-417E-A7A0-B579B7E7854D}"
-	ProjectSection(SolutionItems) = preProject
-		ImdbIoasys\Utils\Criptografia.cs = ImdbIoasys\Utils\Criptografia.cs
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Interfaces", "Infrastructure.Interfaces\Infrastructure.Interfaces.csproj", "{C3B0BABB-809D-4F21-A8AB-9F4E43E7D525}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Interfaces", "Application.Interfaces\Application.Interfaces.csproj", "{6B9F436F-741C-4DDD-9784-AB3F82FA1F2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{4118E00F-943A-4DD0-A4AE-3CE29BAD24E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalUtils", "GlobalUtils\GlobalUtils.csproj", "{A2CC042F-A0E1-4DCB-9113-FB41C86E3AFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +53,10 @@ Global
 		{4118E00F-943A-4DD0-A4AE-3CE29BAD24E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4118E00F-943A-4DD0-A4AE-3CE29BAD24E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4118E00F-943A-4DD0-A4AE-3CE29BAD24E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2CC042F-A0E1-4DCB-9113-FB41C86E3AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CC042F-A0E1-4DCB-9113-FB41C86E3AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CC042F-A0E1-4DCB-9113-FB41C86E3AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CC042F-A0E1-4DCB-9113-FB41C86E3AFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,3 +15,5 @@ D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure\obj\Debug\netcoreapp3.1\
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.genruntimeconfig.cache
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure\bin\Debug\netcoreapp3.1\GlobalUtils.dll
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure\bin\Debug\netcoreapp3.1\GlobalUtils.pdb

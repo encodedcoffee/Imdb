@@ -1,6 +1,9 @@
 ﻿using Application.Interfaces.Services;
 using Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace ImdbIoasys.Controllers
@@ -12,11 +15,12 @@ namespace ImdbIoasys.Controllers
         private readonly IUsuarioService _usuarioService;
         public UsuarioController(IUsuarioService usuarioService) => _usuarioService = usuarioService;
         //    // GET: api/Usuario
-        //    [HttpGet]
-        //    public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
-        //    {
-        //        return await _context.Usuarios.ToListAsync();
-        //    }
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
+        {
+            var usuarios = await _usuarioService.ListAsync();
+            return usuarios.ToList();
+        }
 
         // GET: api/Usuario/5
         [HttpGet("{id}")]
@@ -34,46 +38,34 @@ namespace ImdbIoasys.Controllers
 
         //    // PUT: api/Usuario/5
         //    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //    [HttpPut("{id}")]
-        //    public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
-        //    {
-        //        if (id != usuario.UsuarioId)
-        //        {
-        //            return BadRequest();
-        //        }
+        [HttpPut]
+        public async Task<IActionResult> AlterarUsuario([FromBody]Usuario usuario)
+        {
+            try
+            {
+                await _usuarioService.Alterar(usuario);
+            }
+            catch (Exception)
+            {
+                var usuarioExiste = await _usuarioService.UsuarioExiste(usuario.UsuarioId);
+                if (!usuarioExiste)
+                    return NotFound();
 
-        //        _context.Entry(usuario).State = EntityState.Modified;
+                return BadRequest();
+            }
 
-        //        try
-        //        {
-        //            await _context.SaveChangesAsync();
-        //        }
-        //        catch (DbUpdateConcurrencyException)
-        //        {
-        //            if (!UsuarioExists(id))
-        //            {
-        //                return NotFound();
-        //            }
-        //            else
-        //            {
-        //                throw;
-        //            }
-        //        }
-
-        //        return NoContent();
-        //    }
+            return NoContent();
+        }
 
         //    // POST: api/Usuario
         //    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //    [HttpPost]
-        //    public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
-        //    {
-        //        usuario.Senha = usuario.Senha.Criptografar();
-        //        _context.Usuarios.Add(usuario);
-        //        await _context.SaveChangesAsync();
+        [HttpPost]
+        public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
+        {
+            await _usuarioService.Incluir(usuario);
 
-        //        return CreatedAtAction("GetUsuario", new { id = usuario.UsuarioId }, usuario);
-        //    }
+            return CreatedAtAction("GetUsuario", new { id = usuario.UsuarioId }, usuario);
+        }
 
         //    // DELETE: api/Usuario/5
         //    [HttpDelete("{id}")]

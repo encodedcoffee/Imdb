@@ -69,3 +69,5 @@ D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\ImdbIoasys\obj\Debug\net5.0\ImdbIoasys.
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\ImdbIoasys\obj\Debug\net5.0\ref\ImdbIoasys.dll
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\ImdbIoasys\obj\Debug\net5.0\ImdbIoasys.pdb
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\ImdbIoasys\obj\Debug\net5.0\ImdbIoasys.genruntimeconfig.cache
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\ImdbIoasys\bin\Debug\net5.0\GlobalUtils.dll
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\ImdbIoasys\bin\Debug\net5.0\GlobalUtils.pdb

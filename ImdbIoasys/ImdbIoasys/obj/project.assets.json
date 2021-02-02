@@ -1619,11 +1619,22 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
+      "GlobalUtils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/GlobalUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GlobalUtils.dll": {}
+        }
+      },
       "Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Domain": "1.0.0",
+          "GlobalUtils": "1.0.0",
           "Infrastructure.Interfaces": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2"
@@ -5996,6 +6007,11 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "GlobalUtils/1.0.0": {
+      "type": "project",
+      "path": "../GlobalUtils/GlobalUtils.csproj",
+      "msbuildProject": "../GlobalUtils/GlobalUtils.csproj"
     },
     "Infrastructure/1.0.0": {
       "type": "project",

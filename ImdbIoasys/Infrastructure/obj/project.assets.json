@@ -1531,6 +1531,16 @@
           "bin/placeholder/Domain.dll": {}
         }
       },
+      "GlobalUtils/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/GlobalUtils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GlobalUtils.dll": {}
+        }
+      },
       "Infrastructure.Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5800,6 +5810,11 @@
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
     },
+    "GlobalUtils/1.0.0": {
+      "type": "project",
+      "path": "../GlobalUtils/GlobalUtils.csproj",
+      "msbuildProject": "../GlobalUtils/GlobalUtils.csproj"
+    },
     "Infrastructure.Interfaces/1.0.0": {
       "type": "project",
       "path": "../Infrastructure.Interfaces/Infrastructure.Interfaces.csproj",
@@ -5809,6 +5824,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Domain >= 1.0.0",
+      "GlobalUtils >= 1.0.0",
       "Infrastructure.Interfaces >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.2",
@@ -5852,6 +5868,9 @@
           "projectReferences": {
             "D:\\Dev\\Ioasys\\empresas-dotnet\\ImdbIoasys\\Domain\\Domain.csproj": {
               "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\ImdbIoasys\\Domain\\Domain.csproj"
+            },
+            "D:\\Dev\\Ioasys\\empresas-dotnet\\ImdbIoasys\\GlobalUtils\\GlobalUtils.csproj": {
+              "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\ImdbIoasys\\GlobalUtils\\GlobalUtils.csproj"
             },
             "D:\\Dev\\Ioasys\\empresas-dotnet\\ImdbIoasys\\Infrastructure.Interfaces\\Infrastructure.Interfaces.csproj": {
               "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\ImdbIoasys\\Infrastructure.Interfaces\\Infrastructure.Interfaces.csproj"
