@@ -1,0 +1,16 @@
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\bin\Debug\netcoreapp3.1\Application.dll
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\bin\Debug\netcoreapp3.1\Application.pdb
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\bin\Debug\netcoreapp3.1\Application.Interfaces.dll
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\bin\Debug\netcoreapp3.1\Infrastructure.Interfaces.dll
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\bin\Debug\netcoreapp3.1\Application.Interfaces.pdb
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\bin\Debug\netcoreapp3.1\Infrastructure.Interfaces.pdb
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\obj\Debug\netcoreapp3.1\Application.dll
+D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Application\obj\Debug\netcoreapp3.1\Application.pdb

@@ -1,6 +1,11 @@
-using ImdbIoasys.Data;
+using Application.Interfaces.Services;
+using Application.Services;
+using Infrastructure.DbConfiguration.EfCore;
+using Infrastructure.Interfaces.Repositories;
+using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -20,9 +25,11 @@ namespace ImdbIoasys
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddScoped<DbContext, ImdbContext>();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddControllers();
-            services.AddDbContext<ImdbContext>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ImdbIoasys", Version = "v1" });

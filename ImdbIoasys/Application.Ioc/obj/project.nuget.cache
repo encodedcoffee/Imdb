@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1ay3S9LuJ/bHPfA5pqghxsZY8YD5oXOgVt9x9UPRzNhxPIvKfd+QEu/HdbI2mdrqDwCZ5Vp5brwx3xrfLwBnnw==",
+  "success": true,
+  "projectFilePath": "D:\\Dev\\Ioasys\\empresas-dotnet\\ImdbIoasys\\Application.Ioc\\Application.Ioc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\eduar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
