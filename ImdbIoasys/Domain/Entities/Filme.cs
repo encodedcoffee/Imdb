@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Domain.Entities
 {
@@ -10,5 +11,6 @@ namespace Domain.Entities
         public string Atores { get; set; }
         public string Genero { get; set; }
         public ICollection<Voto> Votos { get; set; }
+        public double Media => Votos?.Select(v => v.Classificacao).Average() ?? 0;
     }
 }

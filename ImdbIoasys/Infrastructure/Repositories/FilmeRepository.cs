@@ -18,7 +18,13 @@ namespace Infrastructure.Repositories
             dbSet = _context.Set<Filme>();
         }
 
-        public async Task<Filme> GetAsync(int id) => await dbSet.FindAsync(id);
+        public async Task<Filme> GetAsync(int id)
+        {
+            var dbSetFilme = dbSet.Include(f => f.Votos);
+            var filme = await dbSetFilme.FirstAsync(f => f.FilmeId == id);
+
+            return filme;
+        }
 
         public async Task<IEnumerable<Filme>> ListAsync(int pagina, Filme filme)
         {
@@ -37,9 +43,9 @@ namespace Infrastructure.Repositories
                 filmes = filmes.Where(f => f.Atores.Contains(filme.Atores));
 
             filmes = filmes.OrderByDescending(f => f.Votos.Count).ThenBy(f => f.Nome);
+            filmes = filmes.AsNoTracking().Include(f => f.Votos);
 
             var filmesFiltrados = await (pagina > 0 ? filmes.Skip((pagina - 1) * 10).Take(10).ToListAsync() : filmes.ToListAsync());
-
             return filmesFiltrados;
         }
 
