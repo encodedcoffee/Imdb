@@ -11,5 +11,6 @@ namespace Application.Interfaces.Services
         Task Alterar(Filme filme);
         Task<bool> FilmeExiste(int filmeId);
         Task Incluir(Filme filme);
+        Task Votar(Voto voto);
     }
 }

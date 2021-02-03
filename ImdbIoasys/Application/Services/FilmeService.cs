@@ -12,14 +12,11 @@ namespace Application.Services
 
         public FilmeService(IFilmeRepository filmeRepository) => _filmeRepository = filmeRepository;
 
-        public Task Alterar(Filme filme) => _filmeRepository.Alterar(filme);
-
-        public Task<bool> FilmeExiste(int filmeId) => _filmeRepository.FilmeExiste(filmeId);
-
-        public Task<Filme> GetAsync(int id) => _filmeRepository.GetAsync(id);
-
-        public Task Incluir(Filme filme) => _filmeRepository.Incluir(filme);
-
-        public Task<IEnumerable<Filme>> ListAsync() => _filmeRepository.ListAsync();
+        public async Task Alterar(Filme filme) => await _filmeRepository.Alterar(filme);
+        public async Task<bool> FilmeExiste(int filmeId) => await _filmeRepository.FilmeExiste(filmeId);
+        public async Task<Filme> GetAsync(int id) => await _filmeRepository.GetAsync(id);
+        public async Task Incluir(Filme filme) => await _filmeRepository.Incluir(filme);
+        public async Task<IEnumerable<Filme>> ListAsync() => await _filmeRepository.ListAsync();
+        public async Task Votar(Voto voto) => await _filmeRepository.Votar(voto);
     }
 }

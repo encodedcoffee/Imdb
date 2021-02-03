@@ -70,5 +70,14 @@ namespace ImdbIoasys.Controllers
 
             return CreatedAtAction("GetFilme", new { id = filme.FilmeId }, filme);
         }
+
+        // POST: api/Filme/Votar
+        [HttpPost("~/api/Filme/Votar")]
+        public async Task<IActionResult> Votar(Voto voto)
+        {
+            await _filmeService.Votar(voto);
+
+            return NoContent();
+        }
     }
 }
