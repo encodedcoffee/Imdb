@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities
+﻿using System.Collections.Generic;
+
+namespace Domain.Entities
 {
     public class Usuario
     {
@@ -8,5 +10,6 @@
         public string Senha { get; set; }
         public bool Ativo { get; set; }
         public bool Administrador { get; set; }
+        public ICollection<Voto> Votos { get; set; }
     }
 }
