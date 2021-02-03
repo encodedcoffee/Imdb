@@ -26,8 +26,7 @@ namespace ImdbIoasys
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<DbContext, ImdbContext>();
-            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
-            services.AddScoped<IUsuarioService, UsuarioService>();
+            RegistrarRepositoriosEServicos(services); 
             services.AddControllers();
 
             services.AddSwaggerGen(c =>
@@ -54,6 +53,19 @@ namespace ImdbIoasys
             {
                 endpoints.MapControllers();
             });
+        }
+
+        private void RegistrarRepositoriosEServicos(IServiceCollection services)
+        {
+            #region Repositorios
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IFilmeRepository, FilmeRepository>();
+            #endregion
+
+            #region Serviços
+            services.AddScoped<IUsuarioService, UsuarioService>();
+            services.AddScoped<IFilmeService, FilmeService>();
+            #endregion
         }
     }
 }
