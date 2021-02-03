@@ -14,11 +14,14 @@ namespace ImdbIoasys.Controllers
     {
         private readonly IUsuarioService _usuarioService;
         public UsuarioController(IUsuarioService usuarioService) => _usuarioService = usuarioService;
-        //    // GET: api/Usuario
+        
+        // GET: api/Usuario
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
+        [Route("~/api/Usuario/GetUsuarios/")]
+        [Route("~/api/Usuario/GetUsuarios/{pagina}")]
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios(int pagina = 0)
         {
-            var usuarios = await _usuarioService.ListAsync();
+            var usuarios = await _usuarioService.ListAsync(pagina);
             return usuarios.ToList();
         }
 
@@ -67,6 +70,7 @@ namespace ImdbIoasys.Controllers
             return CreatedAtAction("GetUsuario", new { id = usuario.UsuarioId }, usuario);
         }
 
+        //TODO Implementar exclusão lógica
         //    // DELETE: api/Usuario/5
         //    [HttpDelete("{id}")]
         //    public async Task<IActionResult> DeleteUsuario(int id)

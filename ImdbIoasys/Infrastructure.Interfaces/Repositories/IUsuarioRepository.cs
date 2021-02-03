@@ -7,7 +7,7 @@ namespace Infrastructure.Interfaces.Repositories
     public interface IUsuarioRepository
     {
         Task<Usuario> GetAsync(int id);
-        Task<IEnumerable<Usuario>> ListAsync();
+        Task<IEnumerable<Usuario>> ListAsync(int pagina);
 
         Task Alterar(Usuario usuario);
         Task<bool> UsuarioExiste(int usuarioId);

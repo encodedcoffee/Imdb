@@ -2,9 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
-using Infrastructure.DbConfiguration.EfCore;
 using Application.Interfaces.Services;
 using System;
 

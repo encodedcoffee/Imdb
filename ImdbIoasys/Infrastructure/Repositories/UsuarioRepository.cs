@@ -3,6 +3,7 @@ using GlobalUtils;
 using Infrastructure.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
@@ -20,7 +21,16 @@ namespace Infrastructure.Repositories
 
         public async Task<Usuario> GetAsync(int id) => await dbSet.FindAsync(id);
 
-        public async Task<IEnumerable<Usuario>> ListAsync() => await dbSet.ToListAsync();
+        public async Task<IEnumerable<Usuario>> ListAsync(int pagina) {
+            const int tamanhoPagina = 10;
+            var usuarios = await (
+                                    pagina > 0 
+                                    ? dbSet.Where(u => !u.Administrador && u.Ativo).Skip((pagina - 1) * tamanhoPagina).Take(tamanhoPagina).OrderBy(u => u.Nome).ToListAsync() 
+                                    : dbSet.Where(u => !u.Administrador && u.Ativo).OrderBy(u => u.Nome).ToListAsync()
+                            );
+            
+            return usuarios;
+        }
 
         public async Task Alterar(Usuario usuario)
         {

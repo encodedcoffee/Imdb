@@ -21,7 +21,7 @@ namespace Application.Services
             await _usuarioRepository.Incluir(usuario);
         }
 
-        public async Task<IEnumerable<Usuario>> ListAsync() => await _usuarioRepository.ListAsync();
+        public async Task<IEnumerable<Usuario>> ListAsync(int pagina) => await _usuarioRepository.ListAsync(pagina);
 
         public async Task<bool> UsuarioExiste(int usuarioId) => await _usuarioRepository.UsuarioExiste(usuarioId);
     }
