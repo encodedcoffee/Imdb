@@ -1,7 +1,9 @@
 ﻿using Application.Interfaces.Services;
 using Domain.Entities;
 using Infrastructure.Interfaces.Repositories;
+using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace Application.Services
@@ -14,7 +16,7 @@ namespace Application.Services
 
         public async Task Alterar(Usuario usuario) => await _usuarioRepository.Alterar(usuario);
 
-        public async Task<Usuario> GetAsync(int id) => await _usuarioRepository.GetAsync(id);
+        public async Task<Usuario> GetAsync(Expression<Func<Usuario, bool>> expressao) => await _usuarioRepository.GetAsync(expressao);
 
         public async Task Incluir(Usuario usuario)
         {
@@ -23,6 +25,6 @@ namespace Application.Services
 
         public async Task<IEnumerable<Usuario>> ListAsync(int pagina) => await _usuarioRepository.ListAsync(pagina);
 
-        public async Task<bool> UsuarioExiste(int usuarioId) => await _usuarioRepository.UsuarioExiste(usuarioId);
+        public async Task<bool> UsuarioExiste(Expression<Func<Usuario, bool>> expressao) => await _usuarioRepository.UsuarioExiste(expressao);
     }
 }

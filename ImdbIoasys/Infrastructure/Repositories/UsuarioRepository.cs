@@ -2,8 +2,10 @@
 using GlobalUtils;
 using Infrastructure.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
@@ -19,7 +21,7 @@ namespace Infrastructure.Repositories
             dbSet = _context.Set<Usuario>();
         }
 
-        public async Task<Usuario> GetAsync(int id) => await dbSet.FindAsync(id);
+        public async Task<Usuario> GetAsync(Expression<Func<Usuario, bool>> expressao) => await dbSet.FirstOrDefaultAsync(expressao);
 
         public async Task<IEnumerable<Usuario>> ListAsync(int pagina) {
             const int tamanhoPagina = 10;
@@ -34,7 +36,7 @@ namespace Infrastructure.Repositories
 
         public async Task Alterar(Usuario usuario)
         {
-            var usuarioAntigo = await GetAsync(usuario.UsuarioId);
+            var usuarioAntigo = await GetAsync(u => u.UsuarioId == usuario.UsuarioId);
             _context.Entry(usuarioAntigo).State = EntityState.Detached;
 
             usuario.Senha = !string.IsNullOrEmpty(usuario.Senha) ? usuario.Senha.Criptografar() : usuarioAntigo.Senha;
@@ -42,7 +44,7 @@ namespace Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<bool> UsuarioExiste(int usuarioId) => await dbSet.AnyAsync(usuario => usuario.UsuarioId == usuarioId);
+        public async Task<bool> UsuarioExiste(Expression<Func<Usuario, bool>> expressao) => await dbSet.AnyAsync(expressao);
 
         public async Task Incluir(Usuario usuario)
         {

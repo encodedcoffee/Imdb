@@ -29,7 +29,7 @@ namespace ImdbIoasys.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetUsuario(int id)
         {
-            var usuario = await _usuarioService.GetAsync(id);
+            var usuario = await _usuarioService.GetAsync(u => u.UsuarioId == id);
 
             if (usuario == null)
             {
@@ -50,7 +50,7 @@ namespace ImdbIoasys.Controllers
             }
             catch (Exception)
             {
-                var usuarioExiste = await _usuarioService.UsuarioExiste(usuario.UsuarioId);
+                var usuarioExiste = await _usuarioService.UsuarioExiste(u => u.UsuarioId == usuario.UsuarioId);
                 if (!usuarioExiste)
                     return NotFound();
 
