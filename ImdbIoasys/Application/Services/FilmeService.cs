@@ -16,7 +16,7 @@ namespace Application.Services
         public async Task<bool> FilmeExiste(int filmeId) => await _filmeRepository.FilmeExiste(filmeId);
         public async Task<Filme> GetAsync(int id) => await _filmeRepository.GetAsync(id);
         public async Task Incluir(Filme filme) => await _filmeRepository.Incluir(filme);
-        public async Task<IEnumerable<Filme>> ListAsync() => await _filmeRepository.ListAsync();
+        public async Task<IEnumerable<Filme>> ListAsync(int pagina, Filme filme) => await _filmeRepository.ListAsync(pagina, filme);
         public async Task Votar(Voto voto) => await _filmeRepository.Votar(voto);
     }
 }

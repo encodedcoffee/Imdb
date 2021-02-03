@@ -2,6 +2,7 @@
 using Infrastructure.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
@@ -19,7 +20,28 @@ namespace Infrastructure.Repositories
 
         public async Task<Filme> GetAsync(int id) => await dbSet.FindAsync(id);
 
-        public async Task<IEnumerable<Filme>> ListAsync() => await dbSet.ToListAsync();
+        public async Task<IEnumerable<Filme>> ListAsync(int pagina, Filme filme)
+        {
+            var filmes = dbSet.Where(f => true);
+
+            if (!string.IsNullOrEmpty(filme?.Diretor))
+                filmes = filmes.Where(f => f.Diretor.Contains(filme.Diretor));
+
+            if(!string.IsNullOrEmpty(filme?.Nome))
+                filmes = filmes.Where(f => f.Nome.Contains(filme.Nome));
+
+            if (!string.IsNullOrEmpty(filme?.Genero))
+                filmes = filmes.Where(f => f.Genero.Contains(filme.Genero));
+
+            if (!string.IsNullOrEmpty(filme?.Atores))
+                filmes = filmes.Where(f => f.Atores.Contains(filme.Atores));
+
+            filmes = filmes.OrderByDescending(f => f.Votos.Count).ThenBy(f => f.Nome);
+
+            var filmesFiltrados = await (pagina > 0 ? filmes.Skip((pagina - 1) * 10).Take(10).ToListAsync() : filmes.ToListAsync());
+
+            return filmesFiltrados;
+        }
 
         public async Task Alterar(Filme filme)
         {

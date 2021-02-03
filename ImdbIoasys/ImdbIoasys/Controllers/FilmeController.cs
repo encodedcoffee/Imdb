@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Domain.Entities;
 using Application.Interfaces.Services;
 using System;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ImdbIoasys.Controllers
 {
@@ -18,9 +19,12 @@ namespace ImdbIoasys.Controllers
 
         // GET: api/Filme
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Filme>>> GetFilmes()
+        [Route("~/api/Filme/GetFilmes/")]
+        [Route("~/api/Filme/GetFilmes/{pagina}")]
+        [SwaggerOperation(Summary = "Listagem de filmes com filtro por {diretor, nome, gênero e/ou atores}, paginação opcional e ordenação composta por qtd. votos / nome")]
+        public async Task<ActionResult<IEnumerable<Filme>>> GetFilmes([FromBody]Filme filme, [FromRoute] int pagina = 0)
         {
-            var filmes = await _filmeService.ListAsync();
+            var filmes = await _filmeService.ListAsync(pagina, filme);
             return filmes.ToList();
         }
 
