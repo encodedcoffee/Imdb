@@ -2,7 +2,6 @@
 using Domain.Entities;
 using GlobalUtils;
 using Infrastructure;
-using Infrastructure.Interfaces.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -27,7 +26,7 @@ namespace ImdbIoasys.Controllers
                 var usuarioExiste = await _usuarioService.UsuarioExiste(u => u.Login.Equals(usuario.Login));
 
                 if (!usuarioExiste)
-                    return base.BadRequest(new { Message = ObterMensagemLoginInvalido() });
+                    return BadRequest(new { Message = ObterMensagemLoginInvalido() });
 
                 var usuarioConsultado = await _usuarioService.GetAsync(u => u.Login.Equals(usuario.Login));
 

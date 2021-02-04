@@ -82,9 +82,15 @@ namespace ImdbIoasys.Controllers
         [HttpPost("~/api/Filme/Votar")]
         public async Task<IActionResult> Votar(Voto voto)
         {
-            await _filmeService.Votar(voto);
-
-            return NoContent();
+            try
+            {
+                await _filmeService.Votar(voto);
+                return NoContent();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(new { Message = e.Message });
+            }
         }
     }
 }
