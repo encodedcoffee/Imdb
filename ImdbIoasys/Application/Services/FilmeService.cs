@@ -26,6 +26,6 @@ namespace Application.Services
             await _filmeRepository.Votar(voto);
         }
 
-        private bool ValidarClassificacao(int classificacao) => classificacao > -1 && classificacao < 5;
+        public bool ValidarClassificacao(int classificacao) => classificacao > -1 && classificacao < 5;
     }
 }

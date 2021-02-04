@@ -12,5 +12,6 @@ namespace Application.Interfaces.Services
         Task<bool> FilmeExiste(int filmeId);
         Task Incluir(Filme filme);
         Task Votar(Voto voto);
+        bool ValidarClassificacao(int classificacao);
     }
 }
