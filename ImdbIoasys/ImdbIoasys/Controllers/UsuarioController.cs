@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace ImdbIoasys.Controllers
         [HttpGet]
         [Route("~/api/Usuario/GetUsuarios/")]
         [Route("~/api/Usuario/GetUsuarios/{pagina}")]
+        [SwaggerOperation(Summary = "Consulta de usuários com paginação opcional ordenada por ordem alfabética | Acesso: ADMINISTRADOR")]
         public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios(int pagina = 0)
         {
             var usuarios = await _usuarioService.ListAsync(pagina);
@@ -29,6 +31,7 @@ namespace ImdbIoasys.Controllers
 
         // GET: api/Usuario/5
         [HttpGet("{id}")]
+        [SwaggerOperation(Summary = "Consulta de usuário por id | Acesso: ADMINISTRADOR")]
         public async Task<ActionResult<Usuario>> GetUsuario(int id)
         {
             var usuario = await _usuarioService.GetAsync(u => u.UsuarioId == id);
@@ -43,6 +46,7 @@ namespace ImdbIoasys.Controllers
 
         // PUT: api/Usuario/5
         [HttpPut]
+        [SwaggerOperation(Summary = "Alteração das informações de usuário/admin | Acesso: ADMINISTRADOR")]
         public async Task<IActionResult> AlterarUsuario([FromBody]Usuario usuario)
         {
             try
@@ -63,6 +67,7 @@ namespace ImdbIoasys.Controllers
 
         // POST: api/Usuario
         [HttpPost]
+        [SwaggerOperation(Summary = "Inclusão das informações de usuário/admin | Acesso: ADMINISTRADOR")]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
             await _usuarioService.Incluir(usuario);
@@ -72,6 +77,7 @@ namespace ImdbIoasys.Controllers
 
         // DELETE: api/Usuario/5
         [HttpDelete("{id}")]
+        [SwaggerOperation(Summary = "Exclusão lógica de usuário/admin | Acesso: ADMINISTRADOR")]
         public async Task<IActionResult> DeleteUsuario(int id)
         {
             await _usuarioService.Excluir(id);

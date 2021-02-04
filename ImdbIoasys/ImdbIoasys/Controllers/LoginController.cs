@@ -4,6 +4,7 @@ using GlobalUtils;
 using Infrastructure;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Threading.Tasks;
 
@@ -19,6 +20,7 @@ namespace ImdbIoasys.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("/api/Autenticar")]
+        [SwaggerOperation(Summary = "Login de usuário/admin | Acesso: TODOS")]
         public async Task<IActionResult> Auth([FromBody] Usuario usuario)
         {
             try
