@@ -14,5 +14,6 @@ namespace Application.Interfaces.Services
         Task Alterar(Usuario usuario);
         Task<bool> UsuarioExiste(Expression<Func<Usuario, bool>> expressao);
         Task Incluir(Usuario usuario);
+        Task Excluir(int id);
     }
 }

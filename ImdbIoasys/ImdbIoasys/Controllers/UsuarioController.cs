@@ -41,8 +41,7 @@ namespace ImdbIoasys.Controllers
             return usuario;
         }
 
-        //    // PUT: api/Usuario/5
-        //    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Usuario/5
         [HttpPut]
         public async Task<IActionResult> AlterarUsuario([FromBody]Usuario usuario)
         {
@@ -62,8 +61,7 @@ namespace ImdbIoasys.Controllers
             return NoContent();
         }
 
-        //    // POST: api/Usuario
-        //    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Usuario
         [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
@@ -72,26 +70,13 @@ namespace ImdbIoasys.Controllers
             return CreatedAtAction("GetUsuario", new { id = usuario.UsuarioId }, usuario);
         }
 
-        //TODO Implementar exclusão lógica
-        //    // DELETE: api/Usuario/5
-        //    [HttpDelete("{id}")]
-        //    public async Task<IActionResult> DeleteUsuario(int id)
-        //    {
-        //        var usuario = await _context.Usuarios.FindAsync(id);
-        //        if (usuario == null)
-        //        {
-        //            return NotFound();
-        //        }
+        // DELETE: api/Usuario/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUsuario(int id)
+        {
+            await _usuarioService.Excluir(id);
 
-        //        _context.Usuarios.Remove(usuario);
-        //        await _context.SaveChangesAsync();
-
-        //        return NoContent();
-        //    }
-
-        //    private bool UsuarioExists(int id)
-        //    {
-        //        return _context.Usuarios.Any(e => e.UsuarioId == id);
-        //    }
+            return NoContent();
+        }
     }
 }

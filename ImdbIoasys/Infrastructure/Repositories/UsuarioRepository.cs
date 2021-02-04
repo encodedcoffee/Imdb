@@ -53,5 +53,13 @@ namespace Infrastructure.Repositories
             dbSet.Add(usuario);
             await _context.SaveChangesAsync();
         }
+
+        public async Task Excluir(int id)
+        {
+            var usuario = await dbSet.FindAsync(id);
+            usuario.Excluido = true;
+
+            await _context.SaveChangesAsync();
+        }
     }
 }

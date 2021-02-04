@@ -10,6 +10,7 @@ namespace Domain.Entities
         public string Login { get; set; }
         public string Senha { get; set; }
         public bool Ativo { get; set; }
+        public bool Excluido { get; set; }
         public bool Administrador => RegraAcesso == ObterConstanteRegraAdministrador();
         public ICollection<Voto> Votos { get; set; }
         private int ObterConstanteRegraAdministrador() => 1;

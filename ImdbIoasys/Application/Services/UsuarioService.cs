@@ -16,6 +16,8 @@ namespace Application.Services
 
         public async Task Alterar(Usuario usuario) => await _usuarioRepository.Alterar(usuario);
 
+        public async Task Excluir(int id) => await _usuarioRepository.Excluir(id);
+
         public async Task<Usuario> GetAsync(Expression<Func<Usuario, bool>> expressao) => await _usuarioRepository.GetAsync(expressao);
 
         public async Task Incluir(Usuario usuario)
