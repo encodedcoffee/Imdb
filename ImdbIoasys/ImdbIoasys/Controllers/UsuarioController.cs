@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces.Services;
 using Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace ImdbIoasys.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "ADMINISTRADOR")]
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioService _usuarioService;

@@ -6,11 +6,13 @@ using Domain.Entities;
 using Application.Interfaces.Services;
 using System;
 using Swashbuckle.AspNetCore.Annotations;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ImdbIoasys.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class FilmeController : ControllerBase
     {
         private readonly IFilmeService _filmeService;
@@ -45,6 +47,7 @@ namespace ImdbIoasys.Controllers
         // PUT: api/Filme/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut]
+        [Authorize(Roles = "ADMINISTRADOR")]
         public async Task<IActionResult> PutFilme([FromBody] Filme filme)
         {
             try
@@ -66,6 +69,7 @@ namespace ImdbIoasys.Controllers
         // POST: api/Filme
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize(Roles = "ADMINISTRADOR")]
         public async Task<ActionResult<Filme>> PostFilme(Filme filme)
         {
             await _filmeService.Incluir(filme);
@@ -74,6 +78,7 @@ namespace ImdbIoasys.Controllers
         }
 
         // POST: api/Filme/Votar
+        [Authorize(Roles = "COMUM")]
         [HttpPost("~/api/Filme/Votar")]
         public async Task<IActionResult> Votar(Voto voto)
         {
