@@ -1,9 +1,0 @@
-D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\GlobalUtils\bin\Debug\netcoreapp3.1\GlobalUtils.deps.json
-D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\GlobalUtils\bin\Debug\netcoreapp3.1\GlobalUtils.dll
-D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\GlobalUtils\bin\Debug\netcoreapp3.1\GlobalUtils.pdb
-D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\GlobalUtils\obj\Debug\netcoreapp3.1\GlobalUtils.csprojAssemblyReference.cache
-D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\GlobalUtils\obj\Debug\netcoreapp3.1\GlobalUtils.AssemblyInfoInputs.cache
-D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\GlobalUtils\obj\Debug\netcoreapp3.1\GlobalUtils.AssemblyInfo.cs
-D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\GlobalUtils\obj\Debug\netcoreapp3.1\GlobalUtils.csproj.CoreCompileInputs.cache
-D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\GlobalUtils\obj\Debug\netcoreapp3.1\GlobalUtils.dll
-D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\GlobalUtils\obj\Debug\netcoreapp3.1\GlobalUtils.pdb
