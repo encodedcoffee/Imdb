@@ -10221,11 +10221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ApplicationTests\\ApplicationTests.csproj",
+      "projectUniqueName": "D:\\Dev\\BLUEBERRY\\Imdb\\ApplicationTests\\ApplicationTests.csproj",
       "projectName": "ApplicationTests",
-      "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ApplicationTests\\ApplicationTests.csproj",
+      "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\ApplicationTests\\ApplicationTests.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ApplicationTests\\obj\\",
+      "outputPath": "D:\\Dev\\BLUEBERRY\\Imdb\\ApplicationTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -10248,11 +10248,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application\\Application.csproj": {
-              "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application\\Application.csproj"
+            "D:\\Dev\\BLUEBERRY\\Imdb\\Application\\Application.csproj": {
+              "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Application\\Application.csproj"
             },
-            "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ImdbIoasys\\Imdb.csproj": {
-              "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ImdbIoasys\\Imdb.csproj"
+            "D:\\Dev\\BLUEBERRY\\Imdb\\ImdbIoasys\\Imdb.csproj": {
+              "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\ImdbIoasys\\Imdb.csproj"
             }
           }
         }

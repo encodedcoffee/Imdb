@@ -7,3 +7,12 @@ D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Domain\obj\Debug\netcoreapp3.1\Domain.A
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Domain\obj\Debug\netcoreapp3.1\Domain.dll
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+D:\Dev\BLUEBERRY\Imdb\Domain\bin\Debug\netcoreapp3.1\Domain.deps.json
+D:\Dev\BLUEBERRY\Imdb\Domain\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Dev\BLUEBERRY\Imdb\Domain\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Dev\BLUEBERRY\Imdb\Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+D:\Dev\BLUEBERRY\Imdb\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+D:\Dev\BLUEBERRY\Imdb\Domain\obj\Debug\netcoreapp3.1\Domain.AssemblyInfo.cs
+D:\Dev\BLUEBERRY\Imdb\Domain\obj\Debug\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+D:\Dev\BLUEBERRY\Imdb\Domain\obj\Debug\netcoreapp3.1\Domain.dll
+D:\Dev\BLUEBERRY\Imdb\Domain\obj\Debug\netcoreapp3.1\Domain.pdb

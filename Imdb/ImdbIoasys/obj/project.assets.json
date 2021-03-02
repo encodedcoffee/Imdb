@@ -7782,11 +7782,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ImdbIoasys\\Imdb.csproj",
+      "projectUniqueName": "D:\\Dev\\BLUEBERRY\\Imdb\\ImdbIoasys\\Imdb.csproj",
       "projectName": "Imdb",
-      "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ImdbIoasys\\Imdb.csproj",
+      "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\ImdbIoasys\\Imdb.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ImdbIoasys\\obj\\",
+      "outputPath": "D:\\Dev\\BLUEBERRY\\Imdb\\ImdbIoasys\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -7809,14 +7809,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj": {
-              "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj"
+            "D:\\Dev\\BLUEBERRY\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj": {
+              "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj"
             },
-            "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application\\Application.csproj": {
-              "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application\\Application.csproj"
+            "D:\\Dev\\BLUEBERRY\\Imdb\\Application\\Application.csproj": {
+              "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Application\\Application.csproj"
             },
-            "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Dev\\BLUEBERRY\\Imdb\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

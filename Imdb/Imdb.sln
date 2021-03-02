@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Imdb", "ImdbIoasys\Imdb.csproj", "{DBBDB422-4CA2-4DF8-A41B-EF5ABBE9B9FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Imdb", "Imdb\Imdb.csproj", "{DBBDB422-4CA2-4DF8-A41B-EF5ABBE9B9FB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Core", "2 - Core", "{E020FB20-98F6-4370-84F9-F0CB438FDE75}"
 EndProject

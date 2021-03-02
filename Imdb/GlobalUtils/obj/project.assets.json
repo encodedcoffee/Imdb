@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\GlobalUtils\\GlobalUtils.csproj",
+      "projectUniqueName": "D:\\Dev\\BLUEBERRY\\Imdb\\GlobalUtils\\GlobalUtils.csproj",
       "projectName": "GlobalUtils",
-      "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\GlobalUtils\\GlobalUtils.csproj",
+      "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\GlobalUtils\\GlobalUtils.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\GlobalUtils\\obj\\",
+      "outputPath": "D:\\Dev\\BLUEBERRY\\Imdb\\GlobalUtils\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

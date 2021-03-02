@@ -10,3 +10,15 @@ D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure.Interfaces\obj\Debug\net
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.csproj.CopyComplete
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.dll
 D:\Dev\Ioasys\empresas-dotnet\ImdbIoasys\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.pdb
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\bin\Debug\netcoreapp3.1\Infrastructure.Interfaces.deps.json
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\bin\Debug\netcoreapp3.1\Infrastructure.Interfaces.dll
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\bin\Debug\netcoreapp3.1\Infrastructure.Interfaces.pdb
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\bin\Debug\netcoreapp3.1\Domain.dll
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\bin\Debug\netcoreapp3.1\Domain.pdb
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.csprojAssemblyReference.cache
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.AssemblyInfoInputs.cache
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.AssemblyInfo.cs
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.csproj.CoreCompileInputs.cache
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.csproj.CopyComplete
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.dll
+D:\Dev\BLUEBERRY\Imdb\Infrastructure.Interfaces\obj\Debug\netcoreapp3.1\Infrastructure.Interfaces.pdb

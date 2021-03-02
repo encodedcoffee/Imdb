@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f3P5u2SCNZW/WuVbKl0H+3vAKQLF452BBNr+SGj4KpkE2RfY5pl7ci735poGO2+yWc7EXkqQg15a+ubC/MNRgw==",
+  "dgSpecHash": "ccK8QWD3tFKJK1/KBdrvAFtIr1pM1ENcx8zxjOhttzjUl8vlpnrJ0JxyYqW78p17JvSffNNf9wPH3BYqYWsCnA==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\Dev\\BLUEBERRY\\Imdb\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eduar\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

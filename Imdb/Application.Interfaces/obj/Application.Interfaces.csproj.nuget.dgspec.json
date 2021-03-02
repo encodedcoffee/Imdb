@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj": {}
+    "D:\\Dev\\BLUEBERRY\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj": {
+    "D:\\Dev\\BLUEBERRY\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj",
+        "projectUniqueName": "D:\\Dev\\BLUEBERRY\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj",
         "projectName": "Application.Interfaces",
-        "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj",
+        "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj",
         "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application.Interfaces\\obj\\",
+        "outputPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Application.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -34,8 +34,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Domain\\Domain.csproj"
+              "D:\\Dev\\BLUEBERRY\\Imdb\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Domain\\Domain.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Domain\\Domain.csproj": {
+    "D:\\Dev\\BLUEBERRY\\Imdb\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Dev\\BLUEBERRY\\Imdb\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Domain\\obj\\",
+        "outputPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

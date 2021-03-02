@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gCNAO3I2lejEBqVaDuJEWZ8dAzlag+YB8smohkUPU28QzL3Sqzmml2siGuLY1ceL9KvSBK8bbm2tkPjG2Gwmwg==",
+  "dgSpecHash": "RtMfZlh0cIIED83AFd39ILUnpO4sDS8W2gXiwYIVcZzAtNMbz8Y84ISxPJB8mc1OugCRh8A25IfzFCGp7BtiZA==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ImdbIoasys\\Imdb.csproj",
+  "projectFilePath": "D:\\Dev\\BLUEBERRY\\Imdb\\ImdbIoasys\\Imdb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eduar\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.2\\microsoft.aspnetcore.authentication.jwtbearer.5.0.2.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YyV64e0MPvTJut3wpQTjOeu863SNzNVkfmPgAAsjCkxMZz0L8TT8JTe8SZ8sK/hI+3kIFXJAygB9ixz6JafqVg==",
+  "dgSpecHash": "ASEHT4cqYs+rGY9yU3sA05WcK5iDR6C0hkheHq6WrZF3tnV4hJgAq5g1ZjzACDG4uEqAy+7sZnjRzmeKE3K5ww==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Dev\\BLUEBERRY\\Imdb\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

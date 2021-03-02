@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hc04IP2WzDGIwzGV6ycFHO146jsldAciLsiX1w8/x3IicsJmMjCFIY/ehqcdjQ7HsLfgA9xo/FDj7oP18lRZ3A==",
+  "dgSpecHash": "A1E4KxyJX6Rl0bkut13LKW0SX1SkfQ7sND2Ph6VxT4EaA2s2oSsPfX0uQHOqtXIY7Eorwx+XaPHJVnieIqzL+g==",
   "success": true,
-  "projectFilePath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\ApplicationTests\\ApplicationTests.csproj",
+  "projectFilePath": "D:\\Dev\\BLUEBERRY\\Imdb\\ApplicationTests\\ApplicationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eduar\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",

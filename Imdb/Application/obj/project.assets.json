@@ -71,11 +71,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application\\Application.csproj",
+      "projectUniqueName": "D:\\Dev\\BLUEBERRY\\Imdb\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application\\Application.csproj",
+      "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application\\obj\\",
+      "outputPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -98,11 +98,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj": {
-              "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj"
+            "D:\\Dev\\BLUEBERRY\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj": {
+              "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Application.Interfaces\\Application.Interfaces.csproj"
             },
-            "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Infrastructure.Interfaces\\Infrastructure.Interfaces.csproj": {
-              "projectPath": "D:\\Dev\\Ioasys\\empresas-dotnet\\Imdb\\Infrastructure.Interfaces\\Infrastructure.Interfaces.csproj"
+            "D:\\Dev\\BLUEBERRY\\Imdb\\Infrastructure.Interfaces\\Infrastructure.Interfaces.csproj": {
+              "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Infrastructure.Interfaces\\Infrastructure.Interfaces.csproj"
             }
           }
         }
