@@ -10189,8 +10189,8 @@
     },
     "Imdb/1.0.0": {
       "type": "project",
-      "path": "../ImdbIoasys/Imdb.csproj",
-      "msbuildProject": "../ImdbIoasys/Imdb.csproj"
+      "path": "../Imdb/Imdb.csproj",
+      "msbuildProject": "../Imdb/Imdb.csproj"
     },
     "Infrastructure/1.0.0": {
       "type": "project",
@@ -10251,8 +10251,8 @@
             "D:\\Dev\\BLUEBERRY\\Imdb\\Application\\Application.csproj": {
               "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Application\\Application.csproj"
             },
-            "D:\\Dev\\BLUEBERRY\\Imdb\\ImdbIoasys\\Imdb.csproj": {
-              "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\ImdbIoasys\\Imdb.csproj"
+            "D:\\Dev\\BLUEBERRY\\Imdb\\Imdb\\Imdb.csproj": {
+              "projectPath": "D:\\Dev\\BLUEBERRY\\Imdb\\Imdb\\Imdb.csproj"
             }
           }
         }

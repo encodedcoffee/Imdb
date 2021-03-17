@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
-    <ProjectReference Include="..\ImdbIoasys\Imdb.csproj" />
+    <ProjectReference Include="..\Imdb\Imdb.csproj" />
   </ItemGroup>
 
 </Project>
