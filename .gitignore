@@ -2,15 +2,15 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+.vs/
 /Imdb/Imdb/bin/Debug/net5.0
-/.vs/*
-/Application/obj/*
-/ApplicationTests/obj/*
-/GlobalUtils/obj/*
-/Domain/obj/*
-/Imdb/obj/*
-/Infrastructure/obj/*
-/Infrastructure.Interfaces/obj/*
+/Application/obj/
+/ApplicationTests/obj/
+/GlobalUtils/obj/
+/Domain/obj/
+/Imdb/obj/
+/Infrastructure/obj/
+/Infrastructure.Interfaces/obj/
 *.cache
 *.suo
 *.ini
